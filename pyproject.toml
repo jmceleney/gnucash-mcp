@@ -1,0 +1,20 @@
+[project]
+name = "gnucash-mcp"
+version = "0.1.0"
+description = "MCP server for GnuCash XML files"
+authors = [
+    {name = "jmceleney"},
+]
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+dependencies = [
+    "mcp>=1.22.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/jmceleney/gnucash-mcp"
+Repository = "https://github.com/jmceleney/gnucash-mcp"
+
+[project.scripts]
+gnucash-mcp = "server:main"
